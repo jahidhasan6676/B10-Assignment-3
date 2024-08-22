@@ -20,10 +20,10 @@
                 extend: {
                     colors: {
                         primary: 'rgb(171, 239, 95)',
-                        secondary: 'rgb(17, 17, 17)',
-                        body: 'rgb(248, 246, 243)',
-                        accent: 'rgb(106, 151, 57)',
-                        body_neutral: 'rgb(51, 51, 51)',
+                        secondary: 'rgb(73, 73, 73)',
+                        body: '',
+                        body: '  ',
+                        body_neutral: '',
                     },
                     fontFamily: {
                         Manrope: 'Manrope',
@@ -38,7 +38,7 @@
  </script>
 </head>
 <body>
-    <header class="w-11/12 md:w-9/12 mx-auto">
+    <header class="w-11/12 md:w-9/12 mx-auto mb-20">
         <!-- navbar part start -->
         <nav class="">
             <div class="navbar ">
@@ -80,6 +80,25 @@
             </div>
         </nav>
         <!-- navbar part end -->
+
+         <!-- banner part start -->
+          <section>
+            <div class="flex flex-col justify-center items-center">
+                <!-- image section part -->
+                 <div class="">
+                    <img src="./assets/banner.png" alt="home">
+                 </div>
+                 <!-- text section part-->
+                  <div class="space-y-4 mt-5 text-center">
+                    <h1 class="text-2xl font-extrabold lg:text-6xl lg:font-bold ">A barn house of this design has a <br>striking appearance</h1>
+                    <p class="text-gray-500 text-sm font-semibold">It is very beautiful design of the house. The design is arranged through th necessary <br> rooms and various extravagant designs within the house.</p>
+                    <div>
+                        <button class=" px-20 md:px-4 py-3 rounded-3xl  bg-[#ABEF5F80] font-bold ">View Details <i class="fa-solid fa-arrow-right w-5 h-5 rounded-full  bg-primary -rotate-45 text-sm"></i></button>
+                    </div>
+                  </div>
+            </div>
+          </section>
+          <!-- banner-section end -->
         
     </header>
     <main>
