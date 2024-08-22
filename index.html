@@ -29,13 +29,21 @@
                         Manrope: 'Manrope',
                     },
                     backgroundImage: {
-                        leaf: "",
+                        image: "../assets/bg.jpg",
                         call_to_action: "",
                     },
                 },
             },
         }
  </script>
+ <style>
+    .bg-image{
+        background-image: url(./assets/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+ </style>
 </head>
 <body class="bg-[#F4F4F4]">
     <header class="w-11/12 md:w-9/12 mx-auto mb-20">
@@ -101,12 +109,12 @@
           <!-- banner-section end -->
         
     </header>
-    <main class="w-11/12 md:w-9/12 mx-auto mb-20 ">
+    <main class=" ">
         <!-- About us section start-->
-         <section>
-            <div class="lg:flex gap-10 space-y-10">
+         <section class="w-11/12 md:w-9/12 mx-auto mb-20">
+            <div class="lg:flex gap-10 space-y-10  ">
                 <!-- text-section-part -->
-                 <div class="space-y-6">
+                 <div class="space-y-6 flex-1">
                     <div class="space-y-6 text-center lg:text-left">
                         <div class=" ">
                             <img class="w-24 h-10 -ml-8 -mb-1  p-2 border-2 border-dashed hidden lg:flex" src="./assets/Vector.png" alt="">
@@ -139,15 +147,15 @@
                     </div>
                 </div>
                  <!-- img section part -->
-                 <div>
-                    <img  src="./assets/Rectangle.png" alt="">
+                 <div class="flex-1">
+                    <img   src="./assets/Rectangle.png" alt="">
                  </div>
             </div>
          </section>
          <!-- about us section end -->
 
          <!-- work process section -->
-          <section class="mt-20 mb-20">
+          <section class="mt-20 w-11/12 md:w-9/12 mx-auto mb-20">
             <div class="space-y-10 ">
                 <!-- text section part -->
                 <div class=" space-y-3 text-center">
@@ -208,11 +216,11 @@
           <!-- card section end -->
 
         <!-- latest portfolio section start-->
-         <section class=" bg-[#FFFFFF] mt-20 mb-20">
-            <div class=" grid grid-cols-1">
+         <section class="w-full bg-[#FFFFFF] ">
+            <div class=" grid grid-cols-1 w-11/12 md:w-9/12 mx-auto">
                 <!-- text section part -->
                  <div>
-                    <div class=" space-y-3 text-center ">
+                    <div class=" space-y-3 text-center mt-10">
                         <div class=" ">
                             
                             <button class=" text-xs w-44 h-8 bg-[#E9E9E9] text-secondary rounded-2xl font-medium"><i class="fa-solid fa-arrow-right mr-1"></i>Explore our Latest works</button>
@@ -224,7 +232,7 @@
                     </div>
                  </div>
                  <!-- portfolio card -->
-                  <div class="grid grid-cols-4  lg:grid-cols-4 lg:grid-rows-2 gap-5 mt-10">
+                  <div class="grid grid-cols-4  lg:grid-cols-4 lg:grid-rows-2 gap-5 mt-10 mb-20">
 
                     <!-- 1st -->
                     <div class="border-2 rounded-xl col-span-4 lg:col-span-3 lg:flex gap-5 p-4 space-y-3">
@@ -272,6 +280,42 @@
 
             </div>
          </section>
+         <!-- latest portfolio section end -->
+
+         <!-- project section start -->
+          <section class="w-full bg-image">
+            <div class="w-11/12 md:w-8/12 mx-auto lg:p-10 p-2">
+                <!-- text section part -->
+                
+                    <div class=" space-y-3 text-center">
+                        <div class=" ">
+                            <button class=" text-xs w-28 h-8 bg-[#E9E9E9] text-secondary rounded-2xl font-medium"><i class="fa-solid fa-arrow-right mr-1"></i>Let’s Connect</button>
+    
+                        </div>
+                        <h4 class="text-2xl font-bold text-font_color">Let’s Discuss Next Project</h4>
+                        <p class="text-sm text-secondary font-semibold">We are already discussing the next project. If you have an opinion about the next project,<br> write your opinion in the form below.</p>
+    
+                    </div>
+                 
+                 <!-- input section part -->
+                  <div class="mt-10 w-full space-y-3">
+                    <div class="lg:flex lg:space-x-4 lg:space-y-0 space-y-3">
+                        <input type="text" placeholder="First Name*" class="input rounded-xl text-xs text-[#A0A0A0] bg-white w-full lg:w-1/2 " />
+                        <input type="text" placeholder="Last Name*" class="input rounded-xl text-xs text-[#A0A0A0] bg-white w-full lg:w-1/2 " />
+                    </div>
+                    
+                    <div class="lg:flex lg:space-x-4 lg:space-y-0 space-y-3">
+                        <input type="text" placeholder="Phone Number*" class="input rounded-xl text-xs text-[#A0A0A0] bg-white w-full lg:w-1/2 " />
+                        <input type="text" placeholder="Email Number*" class="input rounded-xl text-xs text-[#A0A0A0] bg-white w-full lg:w-1/2" />
+                    </div>
+                    
+                    <textarea rows="8" placeholder="Write your massage here"class="textarea rounded-xl bg-white text-xs text-[#A0A0A0]   w-full "></textarea>
+                    
+                    <button class="btn rounded-2xl bg-primary text-[#1C1C1C] font-bold border-none w-full">Send Mail <i class="fa-solid fa-arrow-right  text-[#FFFFFF] w-5 h-5 rounded-full items-center flex justify-center bg-black -rotate-45 "></i></button>
+                  </div>
+
+            </div>
+          </section>
 
 
     </main>
